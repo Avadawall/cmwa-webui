@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -54,8 +54,8 @@ dependencies:
     specifier: ^2.38.0
     version: 2.38.0(solid-js@1.7.12)
   '@tanstack/match-sorter-utils':
-    specifier: ^8.8.4
-    version: 8.8.4
+    specifier: ^8.15.1
+    version: 8.15.1
   '@tanstack/solid-table':
     specifier: ^8.10.3
     version: 8.10.3(solid-js@1.7.12)
@@ -2179,11 +2179,11 @@ packages:
     resolution: {integrity: sha512-icDKK6n8jUYAavHK+L2Xe0/tYjwZVS7uhVazhCMVjdm3RfJLFbeLSNEIWcYdGOg6QAock9yqWse8hnhvsy2M3w==}
     dev: false
 
-  /@tanstack/match-sorter-utils@8.8.4:
-    resolution: {integrity: sha512-rKH8LjZiszWEvmi01NR72QWZ8m4xmXre0OOwlRGnjU01Eqz/QnN+cqpty2PJ0efHblq09+KilvyR7lsbzmXVEw==}
+  /@tanstack/match-sorter-utils@8.15.1:
+    resolution: {integrity: sha512-PnVV3d2poenUM31ZbZi/yXkBu3J7kd5k2u51CGwwNojag451AjTH9N6n41yjXz2fpLeewleyLBmNS6+HcGDlXw==}
     engines: {node: '>=12'}
     dependencies:
-      remove-accents: 0.4.2
+      remove-accents: 0.5.0
     dev: false
 
   /@tanstack/solid-table@8.10.3(solid-js@1.7.12):
@@ -5298,6 +5298,10 @@ packages:
     resolution: {integrity: sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==}
     dev: false
 
+  /remove-accents@0.5.0:
+    resolution: {integrity: sha512-8g3/Otx1eJaVD12e31UbJj1YzdtVvzH85HV7t+9MJYk/u3XmkOUJ5Ys9wQrf9PCPK8+xn4ymzqYCiZl6QWKn+A==}
+    dev: false
+
   /require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
@@ -6507,6 +6511,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
